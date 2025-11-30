@@ -1,0 +1,14 @@
+/*******************\
+    Recipes
+\*******************/
+
+@use "../font" as *;
+@use "../variables" as *;
+
+.recipes {
+  &__control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

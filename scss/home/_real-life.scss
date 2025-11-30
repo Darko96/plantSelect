@@ -1,0 +1,64 @@
+/*******************\
+    Real life 
+\*******************/
+@use "../variables" as *;
+@use "../font" as *;
+
+.real-life {
+  padding: 6rem 0;
+  display: flex;
+  column-gap: 3rem;
+  align-items: center;
+  @media (max-width: 850px) {
+    flex-direction: column;
+    row-gap: 2.5rem;
+  }
+  @media (max-width: 450px) {
+    padding: 4rem 1rem;
+  }
+  &__content {
+    flex: 0 0 509px;
+    @media (max-width: 850px) {
+      flex: 1;
+    }
+  }
+  &__heading {
+    @include Nunito-EB-48-120;
+    color: $col-neutral-900;
+    margin-bottom: 1.25rem;
+    @media (max-width: 450px) {
+      @include Nunito-EB-40-120;
+    }
+  }
+
+  &__text:first-of-type:has(+ &__text) {
+    margin-bottom: 1.25rem;
+  }
+  &__text {
+    @include NunitoSans-M-20-150;
+    color: $col-neutral-600;
+    & span {
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 102px;
+        height: 12px;
+        left: -2px;
+        top: 10px;
+
+        background: #fe9f6b;
+        border-radius: 3px;
+        z-index: -1;
+
+        @media (max-width: 650px) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__img > * {
+    border-radius: $br-16;
+  }
+}

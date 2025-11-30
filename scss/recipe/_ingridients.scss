@@ -1,0 +1,29 @@
+/*******************\
+    Ingridients
+\*******************/
+
+@use "../font" as *;
+@use "../variables" as *;
+
+.ingridients,
+.instructions {
+  &__heading {
+    @include Nunito-B-24-130;
+    color: $col-neutral-900;
+    margin-bottom: 1rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    @include NunitoSans-M-20-150;
+    color: $col-neutral-600;
+  }
+}

@@ -1,0 +1,24 @@
+/*******************\
+    Breadcrumps
+\*******************/
+
+@use "../font" as *;
+@use "../variables" as *;
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  &__link {
+    @include Nunito-SB-18-150;
+    color: #6f857f;
+  }
+
+  &__recipe-name {
+    @include Nunito-SB-18-150;
+    color: $col-neutral-900;
+    & span {
+      margin-inline: 6px;
+    }
+  }
+}

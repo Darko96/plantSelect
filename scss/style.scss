@@ -1,0 +1,47 @@
+@use "font";
+@use "variables";
+@use "global";
+@use "header";
+@use "nav";
+@use "btn";
+@use "cta";
+@use "footer";
+
+/*******************\
+    Home page styles
+\*******************/
+
+@use "home/hero";
+@use "home/feature";
+@use "home/text_box";
+@use "home/real-life";
+
+/*******************\
+    About page styles
+\*******************/
+
+@use "about/mission";
+@use "about/list";
+@use "about/beyond";
+
+/*******************\
+    Recipes page styles
+\*******************/
+
+@use "recipes/explore";
+@use "recipes/filters";
+@use "recipes/recipes";
+@use "recipes/meals";
+@use "recipes/info";
+@use "recipes/details";
+
+/*******************\
+    Recipe page styles
+\*******************/
+
+@use "recipe/breadcrumbs";
+@use "recipe/description";
+@use "recipe/ingridients";
+@use "recipe/instructions";
+@use "recipe/recipe";
+@use "recipe/more";

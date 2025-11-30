@@ -1,0 +1,18 @@
+/*******************\
+    Text box 
+\*******************/
+@use "../variables" as *;
+@use "../font" as *;
+
+.text-box {
+  &__heading {
+    @include Nunito-B-32-130;
+    color: $col-neutral-900;
+    margin-bottom: 0.75rem;
+  }
+
+  &__text {
+    @include NunitoSans-M-20-150;
+    color: $col-neutral-600;
+  }
+}

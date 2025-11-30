@@ -1,0 +1,22 @@
+/*******************\
+    Info
+\*******************/
+
+@use "../font" as *;
+@use "../variables" as *;
+
+.info {
+  &__heading {
+    @include Nunito-B-20-140;
+    color: $col-neutral-900;
+    margin-bottom: 0.625rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__text {
+    @include NunitoSans-M-16-150;
+    color: $col-neutral-600;
+  }
+}

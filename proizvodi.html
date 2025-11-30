@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>PlantSelect</title>
+  </head>
+  <body>
+    <header class="header__main">
+      <a href="index.html" class="header__logo">
+        <img
+          src="assets/images/logo.svg"
+          alt="Healthy Recipe Finder site logo"
+          width="260"
+          height="40"
+        />
+      </a>
+
+      <button class="header__mobile">
+        <img
+          src="assets/images/icon-hamburger-menu.svg"
+          alt="Open mobile navigation"
+        />
+      </button>
+
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">Početna</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="o-nama.html" class="nav__link">O nama</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="proizvodi.html" class="nav__link nav__active">Proizvodi</a>
+          </li>
+        </ul>
+
+        <button class="nav__btn btn">Pogledaj proizvode</button>
+      </nav>
+    </header>
+
+    <div class="tabs container">
+      <button class="tab" data-target="rice">
+        Mašine za sortiranje pirinča
+      </button>
+      <button class="tab" data-target="nut">
+        Mašine za sortiranje žitarica i orašastih plodova
+      </button>
+      <button class="tab" data-target="tea">Mašine za sortiranje čaja</button>
+      <button class="tab" data-target="xray">
+        Mašine za X-ray inspekciju hrane
+      </button>
+      <button class="tab" data-target="recycled">
+        Mašina za sortiranje recikliranih materijala
+      </button>
+      <button class="tab" data-target="ore">Mašine za sortiranje rude</button>
+      <button class="tab" data-target="coal">
+        Mašine za suvo sortiranje uglja
+      </button>
+      <button class="tab" data-target="fruit">Mašine za sortiranje voća</button>
+    </div>
+
+    <main>
+      <section class="recipes container">
+        <!-- 1 -->
+        <section class="meals" id="rice">
+          <!-- 1 -->
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/masina-za-sortiranje-pirinca/observation-pro-serija.webp"
+                alt="Observation Pro serija"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/masina-za-sortiranje-pirinca/observation-pro-serija.webp"
+                alt="Observation Pro serija"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">Observation Pro serija</h2>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/masina-za-sortiranje-pirinca/ai-smart-selection-v-serija.webp"
+                alt="AI Smart Selection V serija"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/masina-za-sortiranje-pirinca/ai-smart-selection-v-serija.webp"
+                alt="AI Smart Selection V serija"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">AI Smart Selection V serija</h2>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/masina-za-sortiranje-pirinca/observation-serija.webp"
+                alt="Observation serija"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/masina-za-sortiranje-pirinca/observation-serija.webp"
+                alt="Observation serija"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">Observation serija</h2>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/masina-za-sortiranje-pirinca/observation-infracrvena-serija.webp"
+                alt="Observation infracrvena serija"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/masina-za-sortiranje-pirinca/observation-infracrvena-serija.webp"
+                alt="Observation infracrvena serija"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">Observation infracrvena serija</h2>
+            </div>
+          </div>
+          <!-- 5 -->
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/masina-za-sortiranje-pirinca/zervi-serija.webp"
+                alt="Zervi serija"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/masina-za-sortiranje-pirinca/zervi-serija.webp"
+                alt="Zervi serija"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">Zervi serija</h2>
+            </div>
+          </div>
+          <!-- 6 -->
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/masina-za-sortiranje-pirinca/zhiling-serija.webp"
+                alt="Zhiling serija"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/masina-za-sortiranje-pirinca/zhiling-serija.webp"
+                alt="Zhiling serija"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">Zhiling serija</h2>
+            </div>
+          </div>
+        </section>
+        <!-- 2 -->
+        <section class="meals" id="nut">
+          <!-- 1 -->
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/masina-za-sortiranje-zitarica-i-orasastih-plodova/1.webp"
+                alt="TAIHO AI Sort A Series – Mašina za sortiranje po boji"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/masina-za-sortiranje-zitarica-i-orasastih-plodova/1.webp"
+                alt="TAIHO AI Sort A Series – Mašina za sortiranje po boji"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">
+                TAIHO AI Sort A Series – Mašina za sortiranje po boji
+              </h2>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/masina-za-sortiranje-zitarica-i-orasastih-plodova/2.webp"
+                alt="TAIHO Zervi Series – Mašina za sortiranje po boji"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/masina-za-sortiranje-zitarica-i-orasastih-plodova/2.webp"
+                alt="TAIHO Zervi Series – Mašina za sortiranje po boji"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">
+                TAIHO Zervi Series – Mašina za sortiranje po boji
+              </h2>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/masina-za-sortiranje-zitarica-i-orasastih-plodova/3.webp"
+                alt="TAIHO AI Sort Infrared Series – Infracrvena mašina za sortiranje po boji"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/masina-za-sortiranje-zitarica-i-orasastih-plodova/3.webp"
+                alt="TAIHO AI Sort Infrared Series – Infracrvena mašina za sortiranje po boji"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">
+                TAIHO AI Sort Infrared Series – Infracrvena mašina za sortiranje
+                po boji
+              </h2>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/masina-za-sortiranje-zitarica-i-orasastih-plodova/4.webp"
+                alt="TAIHO AI Deep Learning Series (suvo sortiranje)"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/masina-za-sortiranje-zitarica-i-orasastih-plodova/4.webp"
+                alt="TAIHO AI Deep Learning Series (suvo sortiranje)"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">
+                TAIHO AI Deep Learning Series (suvo sortiranje)
+              </h2>
+            </div>
+          </div>
+          <!-- 5 -->
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/masina-za-sortiranje-zitarica-i-orasastih-plodova/5.webp"
+                alt="TAIHO AI Deep Learning Series (mokro sortiranje)"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/masina-za-sortiranje-zitarica-i-orasastih-plodova/5.webp"
+                alt="TAIHO AI Deep Learning Series (mokro sortiranje)"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">
+                TAIHO AI Deep Learning Series (mokro sortiranje)
+              </h2>
+            </div>
+          </div>
+          <!-- 6 -->
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/masina-za-sortiranje-zitarica-i-orasastih-plodova/6.webp"
+                alt="TAIHO Zhiling Series – Mašina za sortiranje po boji"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/masina-za-sortiranje-zitarica-i-orasastih-plodova/6.webp"
+                alt="TAIHO Zhiling Series – Mašina za sortiranje po boji"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">
+                TAIHO Zhiling Series – Mašina za sortiranje po boji
+              </h2>
+            </div>
+          </div>
+          <!-- 7 -->
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/masina-za-sortiranje-zitarica-i-orasastih-plodova/7.webp"
+                alt="Serija MV"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/masina-za-sortiranje-zitarica-i-orasastih-plodova/7.webp"
+                alt="Serija MV"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">Serija MV</h2>
+            </div>
+          </div>
+          <!-- 8 -->
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/masina-za-sortiranje-zitarica-i-orasastih-plodova/8.webp"
+                alt="Mašina za sortiranje sa četvorostrukim pregledom i pokretnim transporterom"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/masina-za-sortiranje-zitarica-i-orasastih-plodova/8.webp"
+                alt="Mašina za sortiranje sa četvorostrukim pregledom i pokretnim transporterom"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">
+                Mašina za sortiranje sa četvorostrukim pregledom i pokretnim
+                transporterom
+              </h2>
+            </div>
+          </div>
+          <!-- 9 -->
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/masina-za-sortiranje-zitarica-i-orasastih-plodova/9.webp"
+                alt="Integrisana mašina za brzo sortiranje"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/masina-za-sortiranje-zitarica-i-orasastih-plodova/9.webp"
+                alt="Integrisana mašina za brzo sortiranje"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">
+                Integrisana mašina za brzo sortiranje
+              </h2>
+            </div>
+          </div>
+          <!-- 10 -->
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/masina-za-sortiranje-zitarica-i-orasastih-plodova/10.webp"
+                alt="Integrisana mašina za sporo sortiranje sa pokretnim transporterom"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/masina-za-sortiranje-zitarica-i-orasastih-plodova/10.webp"
+                alt="Integrisana mašina za sporo sortiranje sa pokretnim transporterom"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">
+                Integrisana mašina za sporo sortiranje sa pokretnim
+                transporterom
+              </h2>
+            </div>
+          </div>
+          <!-- 11 -->
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/masina-za-sortiranje-zitarica-i-orasastih-plodova/11.webp"
+                alt="Integrisana jednoslojna infracrvena mašina za sortiranje sa četvorostrukim pregledom"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/masina-za-sortiranje-zitarica-i-orasastih-plodova/11.webp"
+                alt="Integrisana jednoslojna infracrvena mašina za sortiranje sa četvorostrukim pregledom"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">
+                Integrisana jednoslojna infracrvena mašina za sortiranje sa
+                četvorostrukim pregledom
+              </h2>
+            </div>
+          </div>
+        </section>
+        <!-- 3 -->
+        <section class="meals" id="tea">
+          <!-- 1 -->
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/masina-za-sortiranje-caja/1.webp"
+                alt="Observation Pro serija"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/masina-za-sortiranje-caja/1.webp"
+                alt="Observation Pro serija"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">
+                Mašina za sortiranje čaja, serija YaoGuang
+              </h2>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/masina-za-sortiranje-caja/2.webp"
+                alt="AI Smart Selection V serija"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/masina-za-sortiranje-caja/2.webp"
+                alt="AI Smart Selection V serija"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">
+                Mašina za sortiranje svežeg čaja, serija YaoGuang
+              </h2>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/masina-za-sortiranje-caja/3.webp"
+                alt="Observation serija"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/masina-za-sortiranje-caja/3.webp"
+                alt="Observation serija"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">
+                Mašina za uklanjanje nečistoća iz čaja, serija YaoGuang
+              </h2>
+            </div>
+          </div>
+        </section>
+        <!-- 4 -->
+        <section class="meals" id="xray">
+          <!-- 1 -->
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/masine-za-x-ray-inspekciju-hrane/1.webp"
+                alt="Observation Pro serija"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/masine-za-x-ray-inspekciju-hrane/1.webp"
+                alt="Observation Pro serija"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">
+                Integrisani X-ray detektor stranih tela u ambalažnim
+                materijalima
+              </h2>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/masine-za-x-ray-inspekciju-hrane/2.webp"
+                alt="AI Smart Selection V serija"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/masine-za-x-ray-inspekciju-hrane/2.webp"
+                alt="AI Smart Selection V serija"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">
+                Integrisani X-ray detektor stranih tela za rasute materijale
+              </h2>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/masine-za-sortiranje-voca/3.webp"
+                alt="Observation serija"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/masine-za-sortiranje-voca/3.webp"
+                alt="Observation serija"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">
+                Mašina za klasifikaciju voća sa diskovima
+              </h2>
+            </div>
+          </div>
+        </section>
+        <!-- 5 -->
+        <section class="meals" id="recycled">
+          <!-- 1 -->
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/masina-za-sortiranje-recikliranih-materijala/1.webp"
+                alt="Mašina za sortiranje recikliranih plastičnih flaša"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/masina-za-sortiranje-recikliranih-materijala/1.webp"
+                alt="Mašina za sortiranje recikliranih plastičnih flaša"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">
+                Mašina za sortiranje recikliranih plastičnih flaša
+              </h2>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/masina-za-sortiranje-recikliranih-materijala/2.webp"
+                alt="Sorter reciklirane plastike po boji (A serija)"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/masina-za-sortiranje-recikliranih-materijala/2.webp"
+                alt="Sorter reciklirane plastike po boji (A serija)"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">
+                Sorter reciklirane plastike po boji (A serija)
+              </h2>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/masina-za-sortiranje-recikliranih-materijala/3.webp"
+                alt="Mašina za sortiranje reciklirane plastike (Material serija)"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/masina-za-sortiranje-recikliranih-materijala/3.webp"
+                alt="Mašina za sortiranje reciklirane plastike (Material serija)"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">
+                Mašina za sortiranje reciklirane plastike (Material serija)
+              </h2>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/masina-za-sortiranje-recikliranih-materijala/4.webp"
+                alt="Sorter reciklirane plastike po boji (Zervi serija)"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/masina-za-sortiranje-recikliranih-materijala/4.webp"
+                alt="Sorter reciklirane plastike po boji (Zervi serija)"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">
+                Sorter reciklirane plastike po boji (Zervi serija)
+              </h2>
+            </div>
+          </div>
+          <!-- 5 -->
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/masina-za-sortiranje-recikliranih-materijala/5.webp"
+                alt="Sorter reciklirane plastike po boji (UV serija)"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/masina-za-sortiranje-recikliranih-materijala/5.webp"
+                alt="Sorter reciklirane plastike po boji (UV serija)"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">
+                Sorter reciklirane plastike po boji (UV serija)
+              </h2>
+            </div>
+          </div>
+          <!-- 6 -->
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/masina-za-sortiranje-recikliranih-materijala/6.webp"
+                alt="Sorter recikliranog metala po boji (jednoslojni)"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/masina-za-sortiranje-recikliranih-materijala/6.webp"
+                alt="Sorter recikliranog metala po boji (jednoslojni)"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">
+                Sorter recikliranog metala po boji (jednoslojni)
+              </h2>
+            </div>
+          </div>
+          <!-- 7 -->
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/masina-za-sortiranje-recikliranih-materijala/7.webp"
+                alt="Dvostruka slojevita mašina za sporo sortiranje po boji sa pokretnim transporterom"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/masina-za-sortiranje-recikliranih-materijala/7.webp"
+                alt="Dvostruka slojevita mašina za sporo sortiranje po boji sa pokretnim transporterom"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">
+                Dvostruka slojevita mašina za sporo sortiranje po boji sa
+                pokretnim transporterom
+              </h2>
+            </div>
+          </div>
+          <!-- 8 -->
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/masina-za-sortiranje-recikliranih-materijala/8.webp"
+                alt="Mašina za sortiranje recikliranog stakla"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/masina-za-sortiranje-recikliranih-materijala/8.webp"
+                alt="Mašina za sortiranje recikliranog stakla"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">
+                Mašina za sortiranje recikliranog stakla
+              </h2>
+            </div>
+          </div>
+        </section>
+        <!-- 6 -->
+        <section class="meals" id="ore">
+          <!-- 1 -->
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/masina-za-sortiranje-rude/1.webp"
+                alt="Observation Pro serija"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/masina-za-sortiranje-rude/1.webp"
+                alt="Observation Pro serija"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">Mašina za sortiranje rudnog praha</h2>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/masina-za-sortiranje-rude/2.webp"
+                alt="AI Smart Selection V serija"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/masina-za-sortiranje-rude/2.webp"
+                alt="AI Smart Selection V serija"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">Mašina za sortiranje čestica rude</h2>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="meals__card" style="visibility: hidden">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/masine-za-sortiranje-voca/3.webp"
+                alt="Observation serija"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/masine-za-sortiranje-voca/3.webp"
+                alt="Observation serija"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">
+                Mašina za klasifikaciju voća sa diskovima
+              </h2>
+            </div>
+          </div>
+        </section>
+        <!-- 7 -->
+        <section class="meals" id="coal">
+          <!-- 1 -->
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/masina-za-suvo-sortiranje-uglja/1.webp"
+                alt="Observation Pro serija"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/masina-za-suvo-sortiranje-uglja/1.webp"
+                alt="Observation Pro serija"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">
+                VCS/VDS mašina za suvo sortiranje uglja
+              </h2>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/masina-za-suvo-sortiranje-uglja/2.webp"
+                alt="AI Smart Selection V serija"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/masina-za-suvo-sortiranje-uglja/2.webp"
+                alt="AI Smart Selection V serija"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">
+                PIDS BELT mašina za suvo sortiranje uglja tipa sa trakom
+              </h2>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/masine-za-sortiranje-voca/3.webp"
+                alt="Observation serija"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/masine-za-sortiranje-voca/3.webp"
+                alt="Observation serija"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">
+                Mašina za klasifikaciju voća sa diskovima
+              </h2>
+            </div>
+          </div>
+        </section>
+        <!-- 8 -->
+        <!-- 9 -->
+        <section class="meals" id="fruit">
+          <!-- 1 -->
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/masine-za-sortiranje-voca/1.webp"
+                alt="Observation Pro serija"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/masine-za-sortiranje-voca/1.webp"
+                alt="Observation Pro serija"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">
+                Mašina za ocenjivanje i razvrstavanje voća sa lancem
+              </h2>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/masine-za-sortiranje-voca/2.webp"
+                alt="AI Smart Selection V serija"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/masine-za-sortiranje-voca/2.webp"
+                alt="AI Smart Selection V serija"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">
+                Mašina za klasifikaciju i sortiranje sitnog voća po prečniku
+              </h2>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/masine-za-sortiranje-voca/3.webp"
+                alt="Observation serija"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/masine-za-sortiranje-voca/3.webp"
+                alt="Observation serija"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">
+                Mašina za klasifikaciju voća sa diskovima
+              </h2>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <p class="footer__text">
+        Copyright © 2025 PlantSelect. Sva prava su zadržana.
+      </p>
+      <div class="footer__links">
+        <a
+          href="https://www.facebook.com/profile.php?id=61584553072310"
+          class="footer__link"
+        >
+          <img
+            src="assets/images/icon-facebook.svg"
+            alt="Instagram sotial link"
+            class="footer__icon"
+          />
+        </a>
+
+        <a
+          href="https://www.instagram.com/plantselectdoo?igsh=Z3VhMnlrZzRkcTZ1"
+          class="footer__link"
+        >
+          <img
+            src="assets/images/icon-instagram.svg"
+            alt="Bluesky sotial link"
+            class="footer__icon"
+          />
+        </a>
+
+        <a href="mailto:plantselectdoo@gmail.com" class="footer__link">
+          <img
+            src="assets/images/icon-gmail.svg"
+            alt="Bluesky sotial link"
+            class="footer__icon"
+          />
+        </a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

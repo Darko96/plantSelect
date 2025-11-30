@@ -1,0 +1,39 @@
+/*******************\
+    Meals
+\*******************/
+
+@use "../font" as *;
+@use "../variables" as *;
+
+.meals {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  align-items: center;
+  justify-items: center;
+  gap: 2rem;
+
+  @media (max-width: 850px) {
+    grid-template-columns: 1fr;
+  }
+
+  &__card {
+    max-width: 23.5rem;
+    padding: 0.5rem;
+    background-color: $col-white;
+    border-radius: $br-10;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+
+    @media (max-width: 850px) {
+      max-width: 44rem;
+    }
+    @media (max-width: 450px) {
+      max-width: 21.4375rem;
+    }
+  }
+
+  &__img > * {
+    border-radius: $br-10;
+  }
+}

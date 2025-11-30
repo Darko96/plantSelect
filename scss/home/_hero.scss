@@ -1,0 +1,107 @@
+/*******************\
+    Hero 
+\*******************/
+@use "../variables" as *;
+@use "../font" as *;
+
+.hero {
+  padding: 5rem 0 5.25rem;
+  @media (max-width: 850px) {
+    padding: 3rem 0 5rem;
+  }
+  @media (max-width: 450px) {
+    padding: 3rem 0 4rem;
+  }
+
+  /*******************\
+            Here must be some Css code for background line
+            and i dont know how to do this properly  🫣
+  \*******************/
+  position: relative;
+  &__inner {
+    // overflow: hidden;
+    /*******************\
+    &::after {
+      content: "";
+      width: 100vh;
+      height: 100%;
+      top: 0;
+      left: 0;
+      position: absolute;
+      background-image: url(../assets/images/pattern-squiggle-1.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 1;
+        
+    }
+      \*******************/
+  }
+
+  &__content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+    @media (max-width: 850px) {
+      align-items: flex-start;
+      text-align: left;
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  &__heading {
+    @include Nunito-EB-72-110;
+    color: $col-neutral-900;
+    margin-bottom: 0.75rem;
+    @media (max-width: 850px) {
+      @include Nunito-EB-64-110;
+      margin-bottom: 1rem;
+    }
+
+    @media (max-width: 450px) {
+      @include Nunito-EB-52-110;
+      margin-bottom: 1rem;
+    }
+    /*******************\
+        Make orange background first word
+    \*******************/
+    & span {
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0.7rem;
+        width: 100%;
+        height: 2.4375rem;
+        background: #fcd5c3;
+        border-radius: $br-4;
+        z-index: -1;
+      }
+    }
+  }
+
+  &__text {
+    @include NunitoSans-M-20-150;
+    color: $col-neutral-600;
+    margin-bottom: 2.5rem;
+    max-width: 36.25rem;
+    @media (max-width: 850px) {
+      max-width: none;
+    }
+    @media (max-width: 450px) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__imgs {
+    padding: 12px;
+    background-color: $col-white;
+    border-radius: $br-24;
+  }
+
+  & img {
+    border-radius: $br-12;
+  }
+}

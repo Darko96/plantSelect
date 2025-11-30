@@ -1,0 +1,26 @@
+/*******************\
+    Footer
+\*******************/
+
+@use "font" as *;
+@use "variables" as *;
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem 0;
+
+  @media (max-width: 450px) {
+    flex-direction: column-reverse;
+    row-gap: 2rem;
+  }
+  &__text {
+    @include NunitoSans-M-16-150;
+    color: $col-neutral-900;
+  }
+  &__links {
+    display: flex;
+    column-gap: 1.5rem;
+  }
+}

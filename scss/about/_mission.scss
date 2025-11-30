@@ -1,0 +1,68 @@
+/*******************\
+    Mission
+\*******************/
+
+@use "../font" as *;
+@use "../variables" as *;
+
+.mission {
+  border-bottom: 1px solid $col-neutral-200;
+  &__inner {
+    padding: 5rem 0 6rem;
+    display: flex;
+    align-items: center;
+    column-gap: 4rem;
+    @media (max-width: 850px) {
+      flex-direction: column;
+      row-gap: 4rem;
+      padding: 4rem 0 5rem;
+    }
+
+    @media (max-width: 850px) {
+      row-gap: 2.5rem;
+      padding: 3rem 0 4rem;
+    }
+  }
+
+  &__content {
+    // flex: 0 0 510px;
+    max-width: 31.875rem;
+    @media (max-width: 850px) {
+      max-width: 44rem;
+    }
+  }
+  &__heading {
+    background-color: $col-orange;
+    color: $col-neutral-900;
+    @include Nunito-B-20-140;
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: $br-6;
+    margin-bottom: 1.5rem;
+    @media (max-width: 850px) {
+      margin-bottom: 1.625rem;
+    }
+  }
+
+  &__sub-heading {
+    @include Nunito-EB-48-120;
+    color: $col-neutral-900;
+    margin-bottom: 1.5rem;
+    @media (max-width: 850px) {
+      @include Nunito-EB-40-120;
+    }
+  }
+
+  &__text {
+    @include NunitoSans-M-20-150;
+    color: $col-neutral-600;
+  }
+
+  &__text:has(+ &__text) {
+    margin-bottom: 1rem;
+  }
+
+  &__img > * {
+    border-radius: $br-20;
+  }
+}

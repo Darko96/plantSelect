@@ -1,0 +1,129 @@
+/*******************\
+    Font 
+\*******************/
+
+@font-face {
+  font-family: "Nunito";
+  src: url(../assets/fonts/Nunito/Nunito-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url(../assets/fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC\opsz\wdth\wght.ttf);
+}
+
+/*******************\
+ ⚠️ Fonts presets ⚠️ 
+\*******************/
+
+/*******************\
+    Nunito 
+\*******************/
+
+@mixin Nunito-EB-72-110 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  font-size: 4.5rem;
+  line-height: 110%;
+  letter-spacing: -2px;
+}
+
+@mixin Nunito-EB-64-110 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  font-size: 4rem;
+  line-height: 110%;
+  letter-spacing: -2px;
+}
+
+@mixin Nunito-EB-52-110 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  font-size: 3.25rem;
+  line-height: 110%;
+  letter-spacing: -2px;
+}
+
+@mixin Nunito-EB-48-120 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 120%;
+  letter-spacing: -2px;
+}
+
+@mixin Nunito-EB-40-120 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  font-size: 2.5rem;
+  line-height: 120%;
+  letter-spacing: -2px;
+}
+
+@mixin Nunito-B-32-130 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 130%;
+  letter-spacing: -1px;
+}
+
+@mixin Nunito-B-24-130 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 130%;
+  letter-spacing: -1px;
+}
+
+@mixin Nunito-B-20-140 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 130%;
+  letter-spacing: -0.5px;
+}
+
+@mixin Nunito-SB-18-150 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 150%;
+  letter-spacing: -0.3px;
+}
+
+/*******************\
+    Nunito Sans
+\*******************/
+
+@mixin NunitoSans-M-20-150 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 150%;
+  letter-spacing: -0.4px;
+}
+
+@mixin NunitoSans-B-16-150 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 150%;
+  letter-spacing: -0.3px;
+}
+
+@mixin NunitoSans-M-16-150 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 150%;
+  letter-spacing: -0.3px;
+}
+
+@mixin NunitoSans-B-14-150 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 150%;
+  letter-spacing: -0.3px;
+}

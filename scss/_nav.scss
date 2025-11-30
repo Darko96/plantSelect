@@ -1,0 +1,76 @@
+/*******************\
+    Nav
+\*******************/
+
+@use "font" as *;
+@use "variables" as *;
+
+.nav {
+  &__list {
+    display: flex;
+    column-gap: 2.5rem;
+  }
+
+  &__link:link,
+  &__link:visited {
+    @include Nunito-SB-18-150;
+    color: $col-neutral-900;
+    @media (max-width: 850px) {
+      width: 100%;
+    }
+  }
+  &__active,
+  &__link:hover,
+  &__link:active {
+    border-bottom: 4px solid $col-orange;
+  }
+
+  &__link:focus {
+    outline: 4px solid $col-neutral-900;
+    outline-offset: 4px;
+  }
+}
+
+@media (max-width: 850px) {
+  .open.nav {
+    right: 2.5rem;
+    display: flex;
+    z-index: 9999;
+    @media (max-width: 450px) {
+      right: 1rem;
+    }
+  }
+  .nav {
+    position: absolute;
+    top: 5.5rem;
+    right: -100%;
+    width: 91%;
+    flex-direction: column;
+    background-color: $col-white;
+    padding: 0.5rem;
+    align-items: flex-start;
+    border-radius: $br-8;
+    display: none;
+    box-shadow: 0px 12px 22px -12px $col-neutral-600;
+
+    &__list {
+      flex-direction: column;
+      column-gap: 0;
+      width: 100%;
+    }
+
+    &__item {
+      padding: 0.75rem 0.5rem;
+    }
+
+    &__active,
+    &__link:hover,
+    &__link:active {
+      border-bottom: none;
+    }
+
+    &__btn {
+      width: 100%;
+    }
+  }
+}

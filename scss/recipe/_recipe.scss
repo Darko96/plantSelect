@@ -1,0 +1,36 @@
+/*******************\
+    Recipe
+\*******************/
+
+@use "../font" as *;
+@use "../variables" as *;
+
+.recipe {
+  &__inner {
+    padding: 3rem 0 4rem;
+    border-bottom: 1px solid $col-neutral-200;
+    @media (max-width: 850px) {
+      padding: 3rem 0;
+    }
+  }
+
+  &__box {
+    display: flex;
+    column-gap: 2.5rem;
+    @media (max-width: 850px) {
+      flex-direction: column;
+      row-gap: 2.5rem;
+    }
+  }
+
+  &__imgs {
+    flex: 0 0 36.25rem;
+    @media (max-width: 850px) {
+      flex: none;
+    }
+  }
+
+  &__imgs > * {
+    border-radius: $br-10;
+  }
+}

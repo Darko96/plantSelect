@@ -1,0 +1,63 @@
+/*******************\
+    List
+\*******************/
+
+@use "../font" as *;
+@use "../variables" as *;
+
+.list {
+  border-bottom: 1px solid $col-neutral-200;
+  &__inner {
+    padding: 6rem 0;
+    display: flex;
+    column-gap: 4rem;
+    @media (max-width: 850px) {
+      flex-direction: column;
+      padding: 5rem 0;
+    }
+    @media (max-width: 450px) {
+      padding: 3rem 0;
+    }
+  }
+
+  &__heading {
+    @include Nunito-EB-48-120;
+    color: $col-neutral-900;
+    flex: 0 1 23.25rem;
+    // max-width: 23.5rem;
+    @media (max-width: 850px) {
+      flex: none;
+      margin-bottom: 2.5rem;
+    }
+    @media (max-width: 450px) {
+      @include Nunito-EB-40-120;
+    }
+  }
+
+  &__list {
+    flex: 0 1 47.25rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    @media (max-width: 850px) {
+      flex: none;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 1.25rem;
+  }
+  &__text-heading {
+    @include Nunito-B-24-130;
+    color: $col-neutral-900;
+    margin-bottom: 0.75rem;
+  }
+
+  &__text-text {
+    @include NunitoSans-M-20-150;
+    color: $col-neutral-600;
+  }
+}

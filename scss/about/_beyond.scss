@@ -1,0 +1,65 @@
+/*******************\
+    Beyond
+\*******************/
+
+@use "../font" as *;
+@use "../variables" as *;
+
+.beyond {
+  &__inner {
+    padding: 6rem 0;
+    display: flex;
+    column-gap: 4rem;
+    @media (max-width: 850px) {
+      flex-direction: column;
+      row-gap: 2.5rem;
+      padding: 5rem 0;
+    }
+    @media (max-width: 450px) {
+      padding: 3rem 0;
+      column-gap: 2rem;
+    }
+  }
+
+  &__text-box {
+    // flex: 0 0 23.5rem;
+    max-width: 23.5rem;
+    @media (max-width: 850px) {
+      max-width: none;
+    }
+  }
+  &__heading {
+    @include Nunito-EB-48-120;
+    color: $col-neutral-900;
+    margin-bottom: 1.25rem;
+    @media (max-width: 450px) {
+      @include Nunito-EB-40-120;
+    }
+  }
+  &__text {
+    @include NunitoSans-M-20-150;
+    color: $col-neutral-600;
+    margin-bottom: 0.75rem;
+  }
+  &__list {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    &::marker {
+      color: $col-neutral-900;
+    }
+  }
+  &__list-item {
+    @include NunitoSans-M-20-150;
+    color: $col-neutral-600;
+  }
+
+  &__img {
+    flex: 0 1 46.5rem;
+    @media (max-width: 850px) {
+      flex: 1;
+    }
+  }
+  &__img > * {
+    border-radius: $br-20;
+  }
+}

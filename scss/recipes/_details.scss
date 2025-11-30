@@ -1,0 +1,22 @@
+/*******************\
+    Details
+\*******************/
+
+@use "../font" as *;
+@use "../variables" as *;
+
+.details {
+  display: flex;
+  align-items: center;
+  column-gap: 1.2rem;
+  row-gap: 8px;
+
+  flex-wrap: wrap;
+  &__element {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+    @include NunitoSans-M-16-150;
+    color: $col-neutral-600;
+  }
+}
