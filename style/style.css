@@ -522,6 +522,73 @@ button {
 }
 
 /*******************\
+    Feature 
+\*******************/
+.feature {
+  padding-bottom: 6rem;
+  border-bottom: 1px solid #d0dcd9;
+}
+@media (max-width: 450px) {
+  .feature {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
+.feature__heading {
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 120%;
+  letter-spacing: -2px;
+  color: #163a34;
+  margin-bottom: 3rem;
+}
+@media (max-width: 850px) {
+  .feature__heading {
+    text-align: left;
+  }
+}
+
+@media (max-width: 450px) {
+  .feature__heading {
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+    font-size: 2.5rem;
+    line-height: 120%;
+    letter-spacing: -2px;
+    margin-bottom: 2rem;
+  }
+}
+.feature__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(376px, 1fr));
+  gap: 2rem;
+}
+@media (max-width: 450px) {
+  .feature__grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+.feature__img-box {
+  width: 3.75rem;
+  height: 3.75rem;
+  background-color: #fff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 450px) {
+  .feature__img-box {
+    margin-bottom: 1.25rem;
+  }
+}
+
+/*******************\
     Text box 
 \*******************/
 .text-box__heading {
