@@ -7,7 +7,7 @@ mobileBtn.addEventListener("click", function () {
 
 // Tabovi
 const tabs = document.querySelectorAll(".tab");
-const sections = document.querySelectorAll(".meals");
+const sections = document.querySelectorAll(".product");
 
 // Funkcija koja aktivira tab i prikaže odgovarajuću sekciju
 function activateTab(tab) {
