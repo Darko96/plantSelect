@@ -37,3 +37,41 @@ tabs.forEach((tab) => {
 if (tabs.length > 0) {
   activateTab(tabs[0]);
 }
+
+// PROBA
+
+const products = document.querySelectorAll(".product");
+const select = document.getElementById("tabsSelect");
+
+// Desktop tabs
+tabs.forEach((tab) =>
+  tab.addEventListener("click", () => {
+    const target = tab.dataset.target;
+
+    // aktiviraj tab
+    tabs.forEach((t) => t.classList.remove("active"));
+    tab.classList.add("active");
+
+    // prikazi product sekciju
+    products.forEach((p) => {
+      p.style.display = p.id === target ? "grid" : "none";
+    });
+
+    // sinhronizuj select
+    select.value = target;
+  })
+);
+
+// Mobile dropdown
+select.addEventListener("change", () => {
+  const target = select.value;
+
+  products.forEach((p) => {
+    p.style.display = p.id === target ? "grid" : "none";
+  });
+
+  // sinhronizuj desktop tab
+  tabs.forEach((t) => {
+    t.classList.toggle("active", t.dataset.target === target);
+  });
+});

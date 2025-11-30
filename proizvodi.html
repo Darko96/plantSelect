@@ -66,6 +66,25 @@
       <button class="tab" data-target="fruit">Mašine za sortiranje voća</button>
     </div>
 
+    <!-- Mobile dropdown -->
+    <div class="tabs__mobile">
+      <select id="tabsSelect">
+        <option value="rice">Mašine za sortiranje pirinča</option>
+        <option value="nut">
+          Mašine za sortiranje žitarica i orašastih plodova
+        </option>
+        <option value="tea">Mašine za sortiranje čaja</option>
+        <option value="xray">Mašine za X-ray inspekciju hrane</option>
+        <option value="recycled">
+          Mašine za sortiranje recikliranih materijala
+        </option>
+        <option value="ore">Mašine za sortiranje rude</option>
+        <option value="coal">Mašine za suvo sortiranje uglja</option>
+        <option value="packing">Mašine za pakovanje</option>
+        <option value="fruit">Mašine za sortiranje voća</option>
+      </select>
+    </div>
+
     <main>
       <section class="recipes container">
         <!-- 1 -->
@@ -797,7 +816,7 @@
             </div>
           </div>
           <!-- 3 -->
-          <div class="product__card">
+          <div class="product__card" style="visibility: hidden">
             <div class="product__img">
               <img
                 class="hide__mobile"

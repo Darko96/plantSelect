@@ -1008,6 +1008,7 @@ button {
   overflow-x: auto;
   padding: 10px 0;
   margin: 20px auto 60px auto;
+  width: 90%;
 }
 
 .tab {
@@ -1030,4 +1031,63 @@ button {
 .tab.active {
   background-color: #fe9f6b;
   color: #fff;
+}
+
+/* Mobile dropdown hidden on desktop */
+.tabs__mobile {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 2rem auto;
+  }
+
+  .tab {
+    padding: 0.75rem 1.25rem;
+    background: #ffffff;
+    border: 1px solid #d0dcd9;
+    border-radius: 999px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    color: #163a34;
+    transition: 0.3s;
+  }
+
+  .tab:hover {
+    background: #f3f1ee;
+  }
+
+  .tab.active {
+    background: #fe9f6b;
+    color: white;
+    border-color: #fe9f6b;
+  }
+}
+
+@media (max-width: 850px) {
+  .tabs {
+    display: none; /* Sakrij tab dugmad */
+  }
+
+  .tabs__mobile {
+    display: block;
+    margin: 1rem 0 2rem;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .tabs__mobile select {
+    width: 87%;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px solid #163a34;
+    background-color: white;
+    color: #163a34;
+  }
 }
